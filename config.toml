@@ -1,0 +1,4 @@
+baseURL = "http://wondering.monster/"
+languageCode = "en-gb"
+title = "Wondering Monster"
+theme = "blank"
