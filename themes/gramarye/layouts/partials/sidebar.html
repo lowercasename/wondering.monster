@@ -15,7 +15,8 @@
     <div>
       <ul class="fa-ul post-list">
         {{ range first 5 .Site.RegularPages }}
-        <li><span class="fa-li"><i class="fal fa-scroll-old"></i></span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <li><span class="fa-li">{{ index $.Site.Data.icons.icons .Params.Categories | safeHTML }}</span> <a
+            href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
       </ul>
@@ -26,7 +27,7 @@
     <div>
       <ul class="fa-ul post-list">
         {{ range $key, $value := .Site.Taxonomies.categories }}
-        <li> <span class="fa-li">{{ index $.Site.Data.icons.icons ($key | humanize) | safeHTML }}</span>
+        <li><span class="fa-li">{{ index $.Site.Data.icons.icons ($key | humanize) | safeHTML }}</span>
           <a class="no-after" href="{{ "/categories/" | relURL }}{{ $key | urlize  }}">{{ $key | humanize }}</a> <span
             class="badge">{{ len $value }}</span>
         </li>
