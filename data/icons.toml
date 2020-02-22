@@ -1,7 +1,7 @@
 [icons]
 Resources = "<i class='fas fa-flask-potion'></i>"
 Monsters = "<i class='fas fa-dragon'></i>"
-Items = "<i class='fa fa-ring'></i>"
+Items = "<i class='fas fa-ring'></i>"
 Spells = "<i class='fas fa-book-spells'></i>"
 Locations = "<i class='fas fa-dungeon'></i>"
 Adventures = "<i class='fas fa-swords'></i>"
