@@ -1,0 +1,15 @@
+{{ $param := .Param }}
+{{ $showPreamble := .ShowPreamble }}
+{{ with .Context }}
+{{ if $showPreamble }}<span class="post-meta__heading">{{ if eq $param "categories"}}Filed
+  under{{ else }}Tagged{{ end }}</span>{{ end }}
+<ul class="categories">
+  {{ range . }}
+  <li>
+    <a href="{{ printf "/%s/" $param | relURL }}{{ . | urlize }}">
+      {{ if eq $param "categories"}}{{ index $.Site.Data.icons.icons . | safeHTML }}{{ end }} {{ . }}
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

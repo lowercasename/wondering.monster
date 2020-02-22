@@ -1,0 +1,11 @@
+<article>
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <aside class="summary-meta">
+    <time> {{ .Date.Format "2 January 2006" }}</time> &middot;
+    {{ partial "taxonomy_list.html" (dict "Param" "categories" "Context" .Params.categories "Site" .Site ) }}
+  </aside>
+  <div class="summary-content">
+    {{ .Summary }}
+    <a class="read-more-link no-after" href="{{ .Permalink }}">Tell me more <i class="far fa-long-arrow-right"></i></a>
+  </div>
+</article>

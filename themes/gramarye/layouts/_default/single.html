@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div id="page-wrapper">
+  <main>
+    <article>
+      <h3>{{ .Title }}</h3>
+      <div class="content">
+        {{ .Content }}
+      </div>
+      {{ with .Site.DisqusShortname }}
+      <div>
+        {{ template "_internal/disqus.html" . }}
+      </div>
+      {{ end }}
+      <aside class="post-meta">
+        <div>
+          <span class="post-meta__heading">Posted</span>
+          <time> {{ .Date.Format "2 January 2006" }}</time>
+        </div>
+        <div>
+          {{ partial "taxonomy_list.html" (dict "Param" "categories" "Context" .Params.categories "Site" .Site "ShowPreamble" true) }}
+        </div>
+        <div>
+          {{ partial "taxonomy_list.html" (dict "Param" "tags" "Context" .Params.tags "ShowPreamble" true) }}
+        </div>
+      </aside>
+    </article>
+  </main>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

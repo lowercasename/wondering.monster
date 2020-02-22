@@ -1,0 +1,10 @@
+header {
+  padding: 4rem 0 6rem 0;
+  h1 {
+    font-size: calc(45px + (60 - 45) * ((100vw - 300px) / (1260 - 300)));
+    a:hover {
+      background: none;
+      color: $red;
+    }
+  }
+}

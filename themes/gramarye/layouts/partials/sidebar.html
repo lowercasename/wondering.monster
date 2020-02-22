@@ -1,0 +1,39 @@
+<aside id="sidebar">
+  <div>
+    <div class="sidebar__header">
+      <div>
+        <img class="sidebar-image" src="/images/wondering-monster-aldrovandi.png" />
+      </div>
+      <div>
+        <p class="intro-text">A blog of D&D and OSR homebrew, adventures, and other curiosities compiled (primarily for
+          personal pleasure) by <a href="https://raphaelkabo.com">Raphael Kabo</a>.</p>
+      </div>
+    </div>
+    <div>
+      <h3>Latest posts</h3>
+    </div>
+    <div>
+      <ul class="fa-ul post-list">
+        {{ range first 5 .Site.RegularPages }}
+        <li><span class="fa-li"><i class="fal fa-scroll-old"></i></span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div>
+      <h3>Categories</h3>
+    </div>
+    <div>
+      <ul class="fa-ul post-list">
+        {{ range $key, $value := .Site.Taxonomies.categories }}
+        <li> <span class="fa-li">{{ index $.Site.Data.icons.icons ($key | humanize) | safeHTML }}</span>
+          <a class="no-after" href="{{ "/categories/" | relURL }}{{ $key | urlize  }}">{{ $key | humanize }}</a> <span
+            class="badge">{{ len $value }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+
+</aside>

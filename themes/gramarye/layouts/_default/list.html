@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div id="page-wrapper">
+  <main>
+    {{ if or .Title .Content }}
+    {{ with .Title }}<h2>Filed under '{{ . }}'</h2>{{ end }}
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+    {{ end }}
+
+    {{ range .Paginator.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+  </main>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}
