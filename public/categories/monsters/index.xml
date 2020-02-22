@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monsters on Wondering Monster</title>
+    <link>http://wondering.monster/categories/monsters/</link>
+    <description>Recent content in Monsters on Wondering Monster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 21 Feb 2020 19:49:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://wondering.monster/categories/monsters/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Luposwoop</title>
+      <link>http://wondering.monster/monsters/luposwoop/</link>
+      <pubDate>Fri, 21 Feb 2020 19:49:59 +0000</pubDate>
+      
+      <guid>http://wondering.monster/monsters/luposwoop/</guid>
+      <description>Luposwoops are monstrous wolves with the wings, claws, and tail feathers of hawks or magpies. They tend to roost in towers and mountain caves, from where they can descend upon unsuspecting animals and people and tear them apart.</description>
+    </item>
+    
+    <item>
+      <title>Moon Imp</title>
+      <link>http://wondering.monster/monsters/moon-imp/</link>
+      <pubDate>Fri, 21 Feb 2020 19:49:39 +0000</pubDate>
+      
+      <guid>http://wondering.monster/monsters/moon-imp/</guid>
+      <description>Moon Imps are tiny misshapen orbs of moon rock with small clawed legs and twisted faces, resembling miniscule rotund gargoyles. They tend to circle around the heads of worshippers of Obarax, with more powerful beings attracting more Moon Imps.</description>
+    </item>
+    
+    <item>
+      <title>The Geron</title>
+      <link>http://wondering.monster/monsters/the-geron/</link>
+      <pubDate>Fri, 21 Feb 2020 19:04:32 +0000</pubDate>
+      
+      <guid>http://wondering.monster/monsters/the-geron/</guid>
+      <description>The Geron is an elemental demon made of evil moon dust, appearing most often in the form of a seven-foot-tall humanoid with long, tapered arms and legs, floating a few inches above the ground, with a blank dark space instead of a face, where a strange silvery light occasionally flickers.</description>
+    </item>
+    
+  </channel>
+</rss>

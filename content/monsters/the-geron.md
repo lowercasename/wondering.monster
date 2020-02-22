@@ -1,0 +1,31 @@
+---
+title: "The Geron"
+date: 2020-02-21T19:04:32Z
+draft: false
+categories: ["Monsters"]
+tags: ['Omens of Obarax', 'Knave']
+summary: "The Geron is an elemental demon made of evil moon dust, appearing most often in the form of a seven-foot-tall humanoid with long, tapered arms and legs, floating a few inches above the ground, with a blank dark space instead of a face, where a strange silvery light occasionally flickers."
+---
+
+<div class="monster__stat-block">
+  <dl>
+    <dt>Hit dice</dt>
+    <dd>6 (48 HP)</dd>
+    <dt>Armor defence</dt>
+    <dd>14</dd>
+    <dt>Attacks</dt>
+    <dd>1 petrifying touch (1d6/special)</dd>
+    <dt>Morale</dt>
+    <dd>9</dd>
+    <dt>Speed</dt>
+    <dd>40'</dd>
+  </dl>
+</div>
+
+<div class="monster__description">
+
+  The Geron is an elemental demon made of evil moon dust, appearing most often in the form of a seven-foot-tall humanoid with long, tapered arms and legs, floating a few inches above the ground, with a blank dark space instead of a face, where a strange silvery light occasionally flickers.
+  
+  If a living creature is touched by the Geron, it is dealt 1d6 damage and must succeed in a DC 16 Constitution saving throw or begin turning to loose, dusty stone (losing 1d8 maximum HP at the end of each round). A creature who reaches 0 HP in this way turns completely into dust.
+
+</div>

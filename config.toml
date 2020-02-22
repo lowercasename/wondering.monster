@@ -2,3 +2,9 @@ baseURL = "http://wondering.monster/"
 languageCode = "en-gb"
 title = "Wondering Monster"
 theme = "blank"
+paginate = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

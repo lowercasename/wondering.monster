@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on Wondering Monster</title>
+    <link>http://wondering.monster/resources/</link>
+    <description>Recent content in Resources on Wondering Monster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 21 Feb 2020 23:02:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://wondering.monster/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Sack of Resources for Old School Adventures</title>
+      <link>http://wondering.monster/resources/a-sack-of-resources-for-old-school-adventures/</link>
+      <pubDate>Fri, 21 Feb 2020 23:02:21 +0000</pubDate>
+      
+      <guid>http://wondering.monster/resources/a-sack-of-resources-for-old-school-adventures/</guid>
+      <description>This weekend I&amp;rsquo;m running a one-shot adventure for a group of friends, and in pursuit of a D&amp;amp;D-esque system which would get out of the way, but also give that feeling of weird glorious number-crunching corner-peeking treasure-hoisting spider-escaping potion-slurping joy I remember from my first games with D&amp;amp;D 3rd Edition in high school, I discovered Ben Milton&amp;rsquo;s perfect confection Knave. Milton seems to be a big name in the OSR community, to which I am only a newcomer.</description>
+    </item>
+    
+  </channel>
+</rss>
