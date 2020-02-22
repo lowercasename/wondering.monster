@@ -23,7 +23,7 @@ After discovering _Knave_, I went on a rampage through the TRPG Internet, and in
 #### _Knave_ specific
 
 * [A Bestiary for _Knave_](http://natetreme.com/blog/2019/2/20/a-bestiary-for-knave) by Nate Treme of Highland Paranormal Society
-* [A bestiary of monsters from Irish folklore](https://www.reddit.com/r/osr/comments/bfuu2i/i_adapted_some_monsters_and_creatures_from_irish/), also adapted for Knave by u/Kerbobotat
+* [A bestiary of monsters from Irish folklore](https://www.reddit.com/r/osr/comments/bfuu2i/i_adapted_some_monsters_and_creatures_from_irish/), adapted for Knave by u/Kerbobotat
 * [Lawbreaker](https://lawbreaker.herokuapp.com/), a Knave character generator
 * [An alternative and gorgeous character sheet for _Knave_](https://github.com/catnipped/knave-character-sheet) by Ossian Borén
 * [_Knave_ on 1 sheet of paper](https://www.reddit.com/r/rpg/comments/9elnn9/i_put_knave_on_1_sheet_of_paper_for_all_your/), compiled by u/Kalahan. Very handy.
