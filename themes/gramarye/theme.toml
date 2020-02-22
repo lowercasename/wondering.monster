@@ -1,0 +1,12 @@
+name = "Gramarye"
+license = "MIT"
+licenselink = ""
+description = "A Fantastic Hugo Theme"
+homepage = "https://wondering.monster"
+tags = ["blog", "plain", "minimal", "minimalist"]
+features = ["blog"]
+min_version = "0.1"
+
+[author]
+  name = "lowercasename"
+  homepage = "https://github.com/lowercasename"
