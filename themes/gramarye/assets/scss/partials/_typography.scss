@@ -121,6 +121,24 @@ footer a {
   font-weight: $bold-font-weight
 }
 
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0 5rem;
+  position: relative;
+  color: lighten($black, 10%);
+  p:first-child::before {
+    content: '\f10d';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 4rem;
+    font-weight: 700;
+    color: $red;
+    position: absolute;
+    left: 1px;
+    top: -.75rem;
+    opacity: .4;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
   line-height: 1.15;
