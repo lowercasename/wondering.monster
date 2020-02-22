@@ -17,3 +17,5 @@ fields:
 - type: text
   name: summary
   label: summary
+pages:
+- content/mechanics/lessons-a-levelling-mechanic-for-class-less-games.md
