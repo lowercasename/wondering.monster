@@ -20,4 +20,4 @@ When rolling 1d20, your chance of getting any number is 5%. When rolling 3d6, yo
 
 > \[I\]f under 3d6 you have a +1 bonus more than someone else, it feels like a +2 difference in d20. +7 feels like +14.
 
-If you learn _another_ lesson in the same skill area, god rest your dumb soul, you can mark off that skill again: you can now roll **4d6** instead of **1d20** once a session.
+If you learn _another_ lesson in the same skill area, god rest your dumb soul, you can mark off that skill again: you can now roll **4d6** instead of **1d20** once a session, and drop the lowest die to find your total.
