@@ -2,7 +2,7 @@
 categories = ["Mechanics"]
 date = 2020-02-22T19:30:00Z
 summary = ""
-tags = []
+tags = ["Knave"]
 title = "Lessons: A Levelling Mechanic for Class-Less Games"
 
 +++
