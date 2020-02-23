@@ -129,12 +129,12 @@ blockquote {
   p:first-child::before {
     content: '\f10d';
     font-family: 'Font Awesome 5 Pro';
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: $red;
     position: absolute;
-    left: 1px;
-    top: -.75rem;
+    left: 10px;
+    top: -10px;
     opacity: .4;
   }
 }
@@ -235,7 +235,7 @@ dd {
     background: lighten($red, 40%);
   }
   &:not(:first-of-type) {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #dadada;
 }
 }
 

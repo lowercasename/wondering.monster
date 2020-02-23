@@ -445,12 +445,12 @@ blockquote {
   blockquote p:first-child::before {
     content: '\f10d';
     font-family: 'Font Awesome 5 Pro';
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #e62e2e;
     position: absolute;
-    left: 1px;
-    top: -.75rem;
+    left: 10px;
+    top: -10px;
     opacity: .4; }
 
 h1, h2, h3, h4, h5 {
@@ -539,7 +539,7 @@ dd {
   dd:hover {
     background: #fce4e4; }
   dd:not(:first-of-type) {
-    border-top: 1px solid #aaa; }
+    border-top: 1px solid #dadada; }
 
 .badge {
   background: #ddd;
@@ -634,7 +634,9 @@ footer {
     #page-wrapper {
       padding: 0; } }
 .monster__description {
-  font-style: italic; }
+  font-style: italic;
+  column-count: 2;
+  column-width: 250px; }
 
 .content {
   margin-bottom: 2rem; }
