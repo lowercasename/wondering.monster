@@ -439,7 +439,7 @@ footer a {
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 0 5rem;
+  padding-left: 5rem;
   position: relative;
   color: #4d4d4d; }
   blockquote p:first-child::before {
@@ -452,7 +452,9 @@ blockquote {
     left: 10px;
     top: -10px;
     opacity: .4; }
-
+  @media (min-width: 576px) {
+    blockquote {
+      padding-right: 5rem; } }
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
   line-height: 1.15; }
@@ -534,7 +536,7 @@ dt {
   top: 3px; }
 
 dd {
-  transition: .15s ease-out;
+  transition: background .15s ease-out;
   padding: .25rem 0; }
   dd:hover {
     background: #fce4e4; }
@@ -611,7 +613,7 @@ footer {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px; }
+  padding: 0 20px; }
   #page-wrapper #sidebar {
     order: 2;
     padding: 2rem;
@@ -630,13 +632,14 @@ footer {
       #page-wrapper #sidebar {
         flex: 0 0 30rem;
         margin-top: 0; } }
-  @media (min-width: 1340px) {
+  @media (min-width: 1300px) {
     #page-wrapper {
       padding: 0; } }
 .monster__description {
   font-style: italic;
   column-count: 2;
-  column-width: 250px; }
+  column-width: 250px;
+  column-gap: 2em; }
 
 .content {
   margin-bottom: 2rem; }

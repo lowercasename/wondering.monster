@@ -4,7 +4,28 @@
     <article>
       <h3>{{ .Title }}</h3>
       <div class="content monster-post">
-        {{ .Content }}
+        
+        <div class="monster__stat-block">
+          <dl>
+            <dt>Hit dice</dt>
+            <dd>{{.Params.hd}}</dd>
+            <dt>Armor defence</dt>
+            <dd>{{.Params.ac}}</dd>
+            <dt>Attacks</dt>
+            <dd>{{ if .Params.attacks }}{{ delimit .Params.attacks "; "}}{{ end }}</dd>
+            <dt>Morale</dt>
+            <dd>{{.Params.morale}}</dd>
+            <dt>Speed</dt>
+            <dd>{{ if .Params.speed }}{{ delimit .Params.speed "; "}}{{ end }}</dd>
+          </dl>
+        </div>
+
+        <div class="monster__description">
+          {{ .Content }}
+        </div>
+        {{ if .Params.design_notes }}
+          <p><strong>Design notes: </strong>{{ .Params.design_notes }}</p>
+        {{ end }}
       </div>
       {{ with .Site.DisqusShortname }}
       <div>

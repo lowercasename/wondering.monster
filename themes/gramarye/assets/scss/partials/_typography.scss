@@ -123,7 +123,7 @@ footer a {
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 0 5rem;
+  padding-left: 5rem;
   position: relative;
   color: lighten($black, 10%);
   p:first-child::before {
@@ -136,6 +136,9 @@ blockquote {
     left: 10px;
     top: -10px;
     opacity: .4;
+  }
+  @media (min-width: $mobile-breakpoint) {
+    padding-right: 5rem;
   }
 }
 
@@ -229,7 +232,7 @@ dt {
 }
 
 dd {
-  transition: .15s ease-out;
+  transition: background .15s ease-out;
   padding: .25rem 0;
   &:hover {
     background: lighten($red, 40%);

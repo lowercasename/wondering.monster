@@ -1,5 +1,5 @@
 #page-wrapper {
-  $x-padding: 40px;
+  $x-padding: 20px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -37,6 +37,7 @@
   font-style: italic;
   column-count: 2;
   column-width: 250px;
+  column-gap: 2em;
 }
 
 .content {
