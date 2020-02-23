@@ -2,17 +2,17 @@
 categories = ["Mechanics"]
 date = 2020-02-22T19:30:00Z
 summary = ""
-tags = []
+tags = ["Knave"]
 title = "Lessons: A Levelling Mechanic for Class-Less Games"
 
 +++
 An untested concept for adding a little bit of character specialisation during advancement for class-less games like _Knave_. When the players are levelling up, ask them:
 
-"What one lesson has your character learned from this adventure?"
+> "What one lesson has your character learned from this adventure?"
 
 The answers might be along the lines of "turns out dragons can hear _real good_", or "I must not run into the room without checking the ceiling first", or "do not make the Dwarf Princess angry". It's good if the lessons come from a remembrance of a life-or-death situation, something dramatic and storied.
 
-Help each player to translate this lesson into a one-word skill: **stealthiness** or **awareness** or **decorum**. 
+Help each player to translate this lesson into a one-word skill: **stealthiness** or **awareness** or **decorum**.
 
 In surviving the adventure, the player has made something worthwhile of their lessons. From now on, once a session, when rolling an ability check or save based on this skill, your character can roll **3d6** instead of **1d20**. This is sort of like the D&D 3e rule of 'taking 10' - you can play it safe and lean back on the lessons you've learned, not attempting anything exceptional but simply making it more likely that you won't fuck up spectacularly.
 
