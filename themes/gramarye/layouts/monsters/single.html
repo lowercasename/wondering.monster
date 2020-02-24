@@ -34,10 +34,12 @@
               <button style="line-height: 1.4;" type="button" data-micromodal-trigger="converter-modal"><i class="fas fa-question-circle"></i></button>
             </div>
           </div>
-          <div class="col">
-            <img class="monster__image" src="{{ .Params.image }}">
-            <small>{{ .Params.image_description }}</small>
-          </div>
+          {{ if .Params.image }}
+            <div class="col">
+              <img class="monster__image" src="{{ .Params.image }}">
+              <small>{{ .Params.image_description }}</small>
+            </div>
+          {{ end }}
         </div>
       
         <div class="monster__description">
