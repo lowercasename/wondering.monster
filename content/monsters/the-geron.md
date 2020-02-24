@@ -25,5 +25,3 @@ design_notes: call me susceptible, but the name of this monster came from my pho
 The Geron is an elemental demon made of evil moon dust, appearing most often in the form of a seven-foot-tall humanoid with long, tapered arms and legs, floating a few inches above the ground, with a blank dark space instead of a face, where a strange silvery light occasionally flickers.
 
 If a living creature is touched by the Geron, it is dealt 1d6 damage and must succeed in a DC 16 Constitution saving throw or begin turning to loose, dusty stone (losing 1d8 maximum HP at the end of each round). A creature who reaches 0 HP in this way turns completely into dust.
-
-Test.
