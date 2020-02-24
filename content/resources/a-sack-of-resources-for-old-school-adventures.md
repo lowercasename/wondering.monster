@@ -27,6 +27,7 @@ After discovering _Knave_, I went on a rampage through the TRPG Internet, and in
 * [Lawbreaker](https://lawbreaker.herokuapp.com/), a Knave character generator
 * [An alternative and gorgeous character sheet for _Knave_](https://github.com/catnipped/knave-character-sheet) by Ossian Borén
 * [_Knave_ on 1 sheet of paper](https://www.reddit.com/r/rpg/comments/9elnn9/i_put_knave_on_1_sheet_of_paper_for_all_your/), compiled by u/Kalahan. Very handy.
+* [Knacks](https://laughleviathan.blogspot.com/2019/03/knave-knacks.html), a hack to bring specialisation into Knave without bringing in classes, by Brian V. Molina.
 * [A massive collection of neat hacks, embellishments, and extensions for _Knave_](https://buildingsarepeople.blogspot.com/2018/08/knave-mini-review-hacks-additions-and.html) by Buildings Are People (also a great blog for OSR goodness)
 * [_Glaive_, another set of _Knave_ hacks and optional rules](https://campingwithowlbears.blogspot.com/2019/12/glaive-knave-hack-collection-of-house.html) by Camping with Owlbears.
 * [_Rakehell_, an original, dark adventure and setting zine for _Knave_](https://goatmansgoblet.itch.io/rakehell-1), beautifully written in High Weird. Reminds me of one of my favourite video games, [Caves of Qud](https://store.steampowered.com/app/333640/Caves_of_Qud/). Now there's a setting worth playing.
