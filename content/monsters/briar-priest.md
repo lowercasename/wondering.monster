@@ -4,7 +4,6 @@ attacks = []
 categories = ["Monsters"]
 date = 2020-02-24T19:00:00Z
 design_notes = "I originally designed this monster for a Dungeon World one-shot set in my setting of Skyspar, whence the spooky poem. After all, what old-school monster is complete without some purple prose to flesh it out?"
-draft = true
 hd = "3"
 morale = "10"
 size = "Medium"
