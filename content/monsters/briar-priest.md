@@ -42,3 +42,5 @@ Briar priests are endlessly lonesome, and make mournful, creaking, rustling nois
 When in combat, Briar Priests are formidable opponents, whipping their enemies with long trails of spiked briars which shoot out of their arms. They are extremely vulnerable to fire damage, taking double damage, but resistant to bludgeoning attacks, which all but bounce off their springy, woody bodies.
 
 They possess impressive healing powers, drawing on the power of the Forest God Yaqun to regenerate 2 Hit Points per melee round.
+
+![](https://78.media.tumblr.com/ede0ea30de0d0ab983eb2e13401207cf/tumblr_p5hnrrZjwN1vj6ju2o2_500.gif)
