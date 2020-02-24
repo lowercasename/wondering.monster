@@ -10,11 +10,12 @@ summary: Moon Imps are tiny misshapen orbs of moon rock with small clawed legs a
   twisted faces, resembling miniscule rotund gargoyles. They tend to circle around
   the heads of worshippers of Obarax, with more powerful beings attracting more Moon
   Imps.
-hd: "1 (8 HP)"
+hd: "1"
 ac: "12"
-attacks: ["1 moon ray (1d6)"]
+attacks: ["1 moon ray (1d6/special)"]
 morale: "7"
 speed: ["20 feet", "fly 60 feet"]
+size: "Tiny"
 
 ---
 

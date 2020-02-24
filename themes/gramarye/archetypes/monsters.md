@@ -10,6 +10,7 @@ ac: ""
 attacks: [""]
 morale: ""
 speed: [""]
+size: [""]
 design_notes:
 ---
 

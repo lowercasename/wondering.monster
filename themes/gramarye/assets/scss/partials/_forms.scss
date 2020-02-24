@@ -1,0 +1,40 @@
+button {
+  padding: 0 1rem;
+  border: 1px solid $black;
+  background: $grey1;
+  border-radius: 5px;
+  font-size: 0.8em;
+  transition: .15s ease-out;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-right: .5rem;
+  &:hover {
+    color: $red;
+    border-color: $red;
+    background: lighten($red,50%);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  }
+}
+
+select {
+  padding: 0;
+  border: 1px solid $black;
+  background: $grey1;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+dl button {
+  float: right;
+}
+
+button i {
+  transition: transform .5s;
+  &.rolling {
+    transform:rotate(180deg);
+  }
+}
+
+label {
+  font-size: 0.8em;
+  font-weight: 500;
+}

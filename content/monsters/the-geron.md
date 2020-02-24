@@ -10,11 +10,12 @@ summary: The Geron is an elemental demon made of evil moon dust, appearing most 
   in the form of a seven-foot-tall humanoid with long, tapered arms and legs, floating
   a few inches above the ground, with a blank dark space instead of a face, where
   a strange silvery light occasionally flickers.
-hd: "6 (48 HP)"
+hd: "6"
 ac: "14"
 attacks: ["1 petrifying touch (1d6/special)"]
 morale: "9"
 speed: ["40 feet"]
+size: "Medium"
 design_notes: "call me susceptible, but the name of this monster came from my phone autocorrecting my misspelling of 'demon'."
 ---
 

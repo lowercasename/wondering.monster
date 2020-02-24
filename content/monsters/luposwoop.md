@@ -9,11 +9,12 @@ tags:
 summary: Luposwoops are monstrous wolves with the wings, claws, and tail feathers
   of hawks or magpies. They tend to roost in towers and mountain caves, from where
   they can descend upon unsuspecting animals and people and tear them apart.
-hd: "3 (24 HP)"
+hd: "3"
 ac: "13"
 attacks: ["1 bite (1d6)","1 claw (1d4)"]
 morale: "6"
 speed: ["60 feet", "fly 100 feet"]
+size: "Large"
 
 ---
 

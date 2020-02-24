@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "micromodal": "^0.4.2",
+    "rpg-dice-roller": "^4.0.2"
+  }
+}
