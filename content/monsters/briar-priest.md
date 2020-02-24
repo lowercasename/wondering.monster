@@ -35,7 +35,7 @@ The sages have many tales to tell of the Vorhvex, that vast and ancient magical 
 > In that temple's ruined towers  
 > Wander lonesome men of flowers.
 
-Briar Priests are ever-living plant constructs, fashioned from people by the Forest God Yaqun as punishment for crimes now lost to memory. They look like tall humanoids made entirely out of tightly woven vines and briars, covered in small, blooming, sweet-smelling roses of many colors. They walk with a creaking gait, but can leap into battle when the sacred places they guard are threatened. Although they have no eyes, they possess keen tremorsense, and cannot be surprised (checks for sneaking or hiding from them roll with disadvantage).
+Briar Priests are ever-living plant constructs, fashioned from people by the Forest God Yaqun as punishment for crimes now lost to memory. They look like tall humanoids made entirely out of tightly woven vines and briars, covered in small, blooming, sweet-smelling roses of many colors. They walk with a creaking gait, but can leap into battle when the sacred places they guard are threatened. Although they have no eyes, they possess keen tremorsense, and are not easily surprised (checks for sneaking or hiding from them roll with disadvantage).
 
 Briar priests are endlessly lonesome, and make mournful, creaking, rustling noises to communicate amongst themselves. Sometimes they also communicate by giving each other flowers they pick from their own bodies. One who could learn their language might be able to speak with them, for they are as intelligent as the people from which they were fashioned.
 
