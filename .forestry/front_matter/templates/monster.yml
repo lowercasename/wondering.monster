@@ -38,3 +38,5 @@ fields:
 - type: textarea
   name: design_notes
   label: design_notes
+pages:
+- content/monsters/briar-priest.md
