@@ -21,7 +21,16 @@ fields:
   type: file
   config:
     maxSize: 250
-  label: Image
+  label: image
+- name: image_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: image_description
 - type: text
   name: hd
   label: hd
