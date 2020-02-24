@@ -1,0 +1,40 @@
+---
+label: Monster
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: textarea
+  name: summary
+  label: summary
+- type: text
+  name: hd
+  label: hd
+- type: text
+  name: ac
+  label: ac
+- type: list
+  name: attacks
+  label: attacks
+- type: text
+  name: morale
+  label: morale
+- type: list
+  name: speed
+  label: speed
+- type: text
+  name: size
+  label: size
+- type: textarea
+  name: design_notes
+  label: design_notes
