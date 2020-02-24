@@ -4,6 +4,8 @@ date: {{ .Date }}
 draft: false
 categories: ["Monsters"]
 tags: []
+image: ""
+image_description: ""
 summary: ""
 hd: ""
 ac: ""

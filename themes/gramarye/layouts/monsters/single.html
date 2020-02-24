@@ -4,41 +4,49 @@
     <article>
       <h3>{{ .Title }}</h3>
       <div class="content monster-post">
-        
-        <div class="monster__stat-block">
-          <dl>
-            <dt class="monster__stat-block__hd">Hit dice</dt>
-            <dd data-hd="{{.Params.hd}}"><span class="value">{{.Params.hd}}</span><span class="result"></span><button type="button" class="roll-hp"><i class="fal fa-dice-d20"></i> Roll HP</button></dd>
-            <dt class="monster__stat-block__ac">Armor defence</dt>
-            <dd data-ac="{{.Params.ac}}">{{.Params.ac}}</dd>
-            <dt class="monster__stat-block__attacks">Attacks</dt>
-            <dd>{{ if .Params.attacks }}{{ delimit .Params.attacks "; "}}{{ end }}</dd>
-            <dt class="monster__stat-block__morale">Morale</dt>
-            <dd>{{.Params.morale}}</dd>
-            <dt class="monster__stat-block__size">Size</dt>
-            <dd>{{.Params.size}}</dd>
-            <dt class="monster__stat-block__speed">Speed</dt>
-            <dd data-speed="{{ if .Params.speed }}{{ delimit .Params.speed "; " }}{{ end }}">{{ if .Params.speed }}{{ delimit .Params.speed "; "}}{{ end }}</dd>
-          </dl>
+        <div class="row">
+          <div class="col">
+            <div class="monster__stat-block">
+              <dl>
+                <dt class="monster__stat-block__hd">Hit dice</dt>
+                <dd data-hd="{{.Params.hd}}"><span class="value">{{.Params.hd}}</span><span class="result"></span><button type="button" class="roll-hp"><i class="fal fa-dice-d20"></i> Roll HP</button></dd>
+                <dt class="monster__stat-block__ac">Armor defence</dt>
+                <dd data-ac="{{.Params.ac}}">{{.Params.ac}}</dd>
+                <dt class="monster__stat-block__attacks">Attacks</dt>
+                <dd>{{ if .Params.attacks }}{{ delimit .Params.attacks "; "}}{{ end }}</dd>
+                <dt class="monster__stat-block__morale">Morale</dt>
+                <dd>{{.Params.morale}}</dd>
+                <dt class="monster__stat-block__size">Size</dt>
+                <dd>{{.Params.size}}</dd>
+                <dt class="monster__stat-block__speed">Speed</dt>
+                <dd data-speed="{{ if .Params.speed }}{{ delimit .Params.speed "; " }}{{ end }}">{{ if .Params.speed }}{{ delimit .Params.speed "; "}}{{ end }}</dd>
+              </dl>
+            </div>
+    
+            <div class="stat-block-selector">
+              <label for="convert-stat-block">Convert stat block to</label>
+              <select name="convert-stat-block" class="convert-stat-block">
+                <option value="knave">Knave</option>
+                <option value="bx-dnd">OD&D and B/X D&D</option>
+                <option value="adnd">AD&D 1e/2e</option>
+                <option value="5e">D&D 5e</option>
+              </select>
+              <button style="line-height: 1.4;" type="button" data-micromodal-trigger="converter-modal"><i class="fas fa-question-circle"></i></button>
+            </div>
+          </div>
+          <div class="col">
+            <img class="monster__image" src="{{ .Params.image }}">
+            <small>{{ .Params.image_description }}</small>
+          </div>
         </div>
-
-        <div class="stat-block-selector">
-          <label for="convert-stat-block">Convert stat block to:</label>
-          <select name="convert-stat-block" class="convert-stat-block">
-            <option value="knave">Knave</option>
-            <option value="bx-dnd">OD&D and B/X D&D</option>
-            <option value="adnd">AD&D 1e/2e</option>
-            <option value="5e">D&D 5e</option>
-          </select>
-          <button style="line-height: 1.4;" type="button" data-micromodal-trigger="converter-modal"><i class="fas fa-question-circle"></i></button>
-        </div>
-
-
+      
         <div class="monster__description">
           {{ .Content }}
         </div>
         {{ if .Params.design_notes }}
+        <div style="font-style: italic;">
           <p><strong>Design notes: </strong>{{ .Params.design_notes }}</p>
+        </div>
         {{ end }}
       </div>
       {{ with .Site.DisqusShortname }}

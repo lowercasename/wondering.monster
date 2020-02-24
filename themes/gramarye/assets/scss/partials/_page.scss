@@ -33,13 +33,6 @@
   }
 }
 
-.monster__description {
-  font-style: italic;
-  column-count: 2;
-  column-width: 250px;
-  column-gap: 2em;
-}
-
 .content {
   margin-bottom: 2rem;
 }
@@ -92,7 +85,6 @@
 .read-more-link {
   font-weight: $bold-font-weight;
   font-style: normal;
-  white-space: nowrap;
 }
 
 .pagination {
@@ -110,4 +102,25 @@
 
 .stat-block-selector {
   padding-bottom: 1.5rem;
+}
+
+
+.monster__image {
+  max-height: 250px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  &+small {
+    color: #666;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin: 1rem 0;
+    
+  }
+}
+
+.monster__description {
+  // font-style: italic;
 }

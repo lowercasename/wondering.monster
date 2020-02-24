@@ -1,16 +1,13 @@
-/* Dead Simple Grid (c) 2015 Vladimir Agafonkin */
-
-.row .row { margin:  0 -1.5em; }
-.col      { padding: 0  1.5em; }
-
-.row:after {
-    content: "";
-    clear: both;
-    display: table;
+.row {
+    display: block;
+    justify-content: space-between;
+    @media (min-width: $mobile-breakpoint) {
+        display: flex;
+    }
 }
-
-@media only screen { .col {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-}}
+.col:nth-child(1) {
+    flex: 2;
+}
+.col:nth-child(2) {
+    flex: 1;
+}

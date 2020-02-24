@@ -1,20 +1,14 @@
-/* Dead Simple Grid (c) 2015 Vladimir Agafonkin */
-.row .row {
-  margin: 0 -1.5em; }
+.row {
+  display: block;
+  justify-content: space-between; }
+  @media (min-width: 576px) {
+    .row {
+      display: flex; } }
+.col:nth-child(1) {
+  flex: 2; }
 
-.col {
-  padding: 0  1.5em; }
-
-.row:after {
-  content: "";
-  clear: both;
-  display: table; }
-
-@media only screen {
-  .col {
-    float: left;
-    width: 100%;
-    box-sizing: border-box; } }
+.col:nth-child(2) {
+  flex: 1; }
 
 /*!
  * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
@@ -669,12 +663,6 @@ footer {
   @media (min-width: 1300px) {
     #page-wrapper {
       padding: 0; } }
-.monster__description {
-  font-style: italic;
-  column-count: 2;
-  column-width: 250px;
-  column-gap: 2em; }
-
 .content {
   margin-bottom: 2rem; }
 
@@ -717,8 +705,7 @@ footer {
 
 .read-more-link {
   font-weight: 700;
-  font-style: normal;
-  white-space: nowrap; }
+  font-style: normal; }
 
 .pagination {
   width: 100%;
@@ -733,6 +720,19 @@ footer {
 
 .stat-block-selector {
   padding-bottom: 1.5rem; }
+
+.monster__image {
+  max-height: 250px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px; }
+  .monster__image + small {
+    color: #666;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin: 1rem 0; }
 
 /**************************\
   Basic Modal Styles
