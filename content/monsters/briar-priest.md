@@ -39,6 +39,6 @@ Briar Priests are ever-living plant constructs, fashioned from people by the For
 
 Briar priests are endlessly lonesome, and make mournful, creaking, rustling noises to communicate amongst themselves. Sometimes they also communicate by giving each other flowers they pick from their own bodies. One who could learn their language might be able to speak with them, for they are as intelligent as the people from which they were fashioned.
 
-When in combat, Briar Priests are formidable opponents, whipping their opponents with long trails of spiked briars which shoot out of their arms. They are extremely vulnerable to fire damage, taking double damage, but resistant to bludgeoning attacks, which all but bounce off their springy, woody bodies.
+When in combat, Briar Priests are formidable opponents, whipping their enemies with long trails of spiked briars which shoot out of their arms. They are extremely vulnerable to fire damage, taking double damage, but resistant to bludgeoning attacks, which all but bounce off their springy, woody bodies.
 
 They possess impressive healing powers, drawing on the power of the Forest God Yaqun to regenerate 2 Hit Points per melee round.
