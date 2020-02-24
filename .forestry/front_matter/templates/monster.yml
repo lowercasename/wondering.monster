@@ -17,6 +17,11 @@ fields:
 - type: textarea
   name: summary
   label: summary
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 - type: text
   name: hd
   label: hd
