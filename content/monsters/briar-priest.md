@@ -13,6 +13,8 @@ tags = ["Skyspar"]
 title = "Briar Priest"
 
 +++
+![](https://78.media.tumblr.com/ede0ea30de0d0ab983eb2e13401207cf/tumblr_p5hnrrZjwN1vj6ju2o2_500.gif)
+
 The sages have many tales to tell of the Vorhvex, that vast and ancient magical forest marking Riverie's south border. Once, it is said, people and the creatures of the woods lived in harmony amongst those dark and brooding trees. Roads ran the length of the forest, and a monastery to the forest god Yaqun sat somewhere deep in its groves. But those times are long past. Nobody who enters the forest now ever comes out. The sages whisper that the priests angered the forest in some way. Perhaps they stole something precious from its heart. Perhaps they interfered in some way in the endless war between the creatures of the forest and those evil denizens of the swamp. All they remember nowadays is the strange verse...
 
 > The Temple fallen long ago  
@@ -42,5 +44,3 @@ Briar priests are endlessly lonesome, and make mournful, creaking, rustling nois
 When in combat, Briar Priests are formidable opponents, whipping their enemies with long trails of spiked briars which shoot out of their arms. They are extremely vulnerable to fire damage, taking double damage, but resistant to bludgeoning attacks, which all but bounce off their springy, woody bodies.
 
 They possess impressive healing powers, drawing on the power of the Forest God Yaqun to regenerate 2 Hit Points per melee round.
-
-![](https://78.media.tumblr.com/ede0ea30de0d0ab983eb2e13401207cf/tumblr_p5hnrrZjwN1vj6ju2o2_500.gif)
