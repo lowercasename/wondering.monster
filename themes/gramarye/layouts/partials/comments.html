@@ -86,6 +86,7 @@
         if (response.status === "ok") {
           parseComment(response)
           $('.comment-error').css('display', 'none')
+          $('.no-comments-message').css("display", "none")
           $('#comment-name, #comment-content').val("")
         } else {
           console.error(response)
