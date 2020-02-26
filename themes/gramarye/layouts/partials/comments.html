@@ -58,7 +58,7 @@
   }
 
   $(document).ready(function () {
-    $.get('http://comments.wondering.monster/fetch/{{ .File.BaseFileName }}', function (response) {
+    $.get('https://comments.wondering.monster/fetch/{{ .File.BaseFileName }}', function (response) {
       if (response.status === "ok") {
         $(".lds-ring").css("display", "none")
         let comments = response.comments;
@@ -70,7 +70,7 @@
     $('#comment-submit').click(function (e) {
       e.preventDefault();
       var data = $('#new-comment-form').serialize();
-      $.post('http://comments.wondering.monster/create', data, function (response) {
+      $.post('https://comments.wondering.monster/create', data, function (response) {
         if (response.status === "ok") {
           parseComment(response)
           $('.comment-error').css('display', 'none')
