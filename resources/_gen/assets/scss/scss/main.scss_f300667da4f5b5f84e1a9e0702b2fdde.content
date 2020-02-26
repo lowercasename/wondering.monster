@@ -559,6 +559,21 @@ button {
     background: white;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); }
 
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0 1rem;
+  border: 1px solid #333;
+  background: #fefefe;
+  border-radius: 5px;
+  font-size: 0.95em;
+  transition: .15s ease-out;
+  margin-bottom: 1rem; }
+  input:focus,
+  textarea:focus {
+    background: #fffbfb; }
+
 select {
   padding: 0;
   border: 1px solid #333;
@@ -577,6 +592,13 @@ button i {
 label {
   font-size: 0.8em;
   font-weight: 500; }
+
+.form-text {
+  font-size: .85em;
+  margin: 0;
+  position: relative;
+  color: #666;
+  top: -1rem; }
 
 header {
   padding: 4rem 0 6rem 0; }
@@ -825,3 +847,78 @@ footer {
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform; }
+
+.comment {
+  max-width: 640px;
+  font-size: .9em;
+  display: flex;
+  margin: 2rem 0; }
+  .comment .comment-avatar-container {
+    width: 60px; }
+  .comment .comment-container {
+    padding: 0 1rem; }
+  .comment .comment-author {
+    font-weight: 700;
+    margin-right: .75rem; }
+  .comment .comment-date {
+    color: #666; }
+  .comment header {
+    display: flex;
+    padding: 0;
+    font-size: 1em; }
+
+#new-comment-form {
+  max-width: 640px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd; }
+
+#comment-section {
+  max-width: 640px;
+  margin: 0 auto; }
+
+.comment-error {
+  display: none;
+  transition: .15s ease;
+  border: 1px solid #e62e2e;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-size: .9em;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1.2;
+  background: #f6b7b7; }
+
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto; }
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #ddd;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ddd transparent transparent transparent; }
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s; }
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s; }
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s; }
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
