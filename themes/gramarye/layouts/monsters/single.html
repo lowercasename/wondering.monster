@@ -9,7 +9,9 @@
             <div class="monster__stat-block">
               <dl>
                 <dt class="monster__stat-block__hd">Hit dice</dt>
-                <dd data-hd="{{.Params.hd}}"><span class="value">{{.Params.hd}}</span><span class="result"></span><button type="button" class="roll-hp"><i class="fal fa-dice-d20"></i> Roll HP</button></dd>
+                <dd data-hd="{{.Params.hd}}"><span class="value">{{.Params.hd}}</span><span
+                    class="result"></span><button type="button" class="roll-hp"><i class="fal fa-dice-d20"></i> Roll
+                    HP</button></dd>
                 <dt class="monster__stat-block__ac">Armor defence</dt>
                 <dd data-ac="{{.Params.ac}}">{{.Params.ac}}</dd>
                 <dt class="monster__stat-block__attacks">Attacks</dt>
@@ -19,10 +21,11 @@
                 <dt class="monster__stat-block__size">Size</dt>
                 <dd>{{.Params.size}}</dd>
                 <dt class="monster__stat-block__speed">Speed</dt>
-                <dd data-speed="{{ if .Params.speed }}{{ delimit .Params.speed "; " }}{{ end }}">{{ if .Params.speed }}{{ delimit .Params.speed "; "}}{{ end }}</dd>
+                <dd data-speed="{{ if .Params.speed }}{{ delimit .Params.speed "; " }}{{ end }}">
+                  {{ if .Params.speed }}{{ delimit .Params.speed "; "}}{{ end }}</dd>
               </dl>
             </div>
-    
+
             <div class="stat-block-selector">
               <label for="convert-stat-block">Convert stat block to</label>
               <select name="convert-stat-block" class="convert-stat-block">
@@ -31,17 +34,18 @@
                 <option value="adnd">AD&D 1e/2e</option>
                 <option value="5e">D&D 5e</option>
               </select>
-              <button style="line-height: 1.4;" type="button" data-micromodal-trigger="converter-modal"><i class="fas fa-question-circle"></i></button>
+              <button style="line-height: 1.4;" type="button" data-micromodal-trigger="converter-modal"><i
+                  class="fas fa-question-circle"></i></button>
             </div>
           </div>
           {{ if .Params.image }}
-            <div class="col">
-              <img class="monster__image" src="{{ .Params.image }}">
-              <small>{{ .Params.image_description }}</small>
-            </div>
+          <div class="col">
+            <img class="monster__image" src="{{ .Params.image }}">
+            <small>{{ .Params.image_description }}</small>
+          </div>
           {{ end }}
         </div>
-      
+
         <div class="monster__description">
           {{ .Content }}
         </div>
@@ -69,6 +73,7 @@
         </div>
       </aside>
     </article>
+    {{ partial "comments.html" . }}
   </main>
   {{ partial "sidebar.html" . }}
 </div>
@@ -84,10 +89,13 @@
       </header>
       <main class="modal__content" id="converter-modal-content">
         <p>
-          Conversions use a mish-mash of guidelines from <em>Knave</em>, <em>Swords & Sorcery</em>, and <a href="https://web.archive.org/web/20190225223936/http://swshinn.com/dnd-5e/5e-to-1e-combat-tracker/">Stan Shinn</a>.
+          Conversions use a mish-mash of guidelines from <em>Knave</em>, <em>Swords & Sorcery</em>, and <a
+            href="https://web.archive.org/web/20190225223936/http://swshinn.com/dnd-5e/5e-to-1e-combat-tracker/">Stan
+            Shinn</a>.
         </p>
         <p>
-          Conversions, especially those for D&D 5e, are very approximate and not playtested - they <strong>will</strong> require adjustments at your table.
+          Conversions, especially those for D&D 5e, are very approximate and not playtested - they <strong>will</strong>
+          require adjustments at your table.
         </p>
       </main>
     </div>
@@ -130,10 +138,10 @@
     "huge": "d12",
     "gargantuan": "d20"
   }
-  function isNumeric(num){
+  function isNumeric(num) {
     return !isNaN(num)
   }
-  $(".roll-hp").click(function() {
+  $(".roll-hp").click(function () {
     let hdValue = $('.monster__stat-block__hd').next('dd').find('.value').text().split(/([+-])/);
     console.log(hdValue);
     let dieCount = hdValue[0];
@@ -153,7 +161,7 @@
     dieIcon.toggleClass("rolling");
     result.text(" (" + roll.notation + "; " + roll.total + " HP)");
   })
-  $('.convert-stat-block').change(function() {
+  $('.convert-stat-block').change(function () {
     let system = $(this).val();
     let acLabel = $('.monster__stat-block__ac');
     let acValue = $('.monster__stat-block__ac').next('dd').data('ac');
@@ -169,13 +177,13 @@
     } else if (system === "bx-dnd") {
       acLabel.text("Armor Class");
       acResult.text(19 - acValue);
-       // Movement conversion adapted from Swords & Wizardy
+      // Movement conversion adapted from Swords & Wizardy
       let speedValues = $('.monster__stat-block__speed').next('dd').data('speed');
       let speedArray = speedValues.match(/\d+/g).map(Number);
       let splitSpeedValues = speedValues.split(' ');
-      let newSpeed = splitSpeedValues.map(function(value) {
+      let newSpeed = splitSpeedValues.map(function (value) {
         if (isNumeric(value)) {
-          let convertedValue = Math.floor(value*3/10);
+          let convertedValue = Math.floor(value * 3 / 10);
           return convertedValue;
         } else if (value === "feet") {
           let convertedValue = '';
