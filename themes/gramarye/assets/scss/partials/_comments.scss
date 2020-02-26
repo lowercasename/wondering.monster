@@ -35,7 +35,7 @@
   margin: 0 auto;
 }
 
-.comment-error {
+.error-message {
   display: none;
   transition: .15s ease;
   border: 1px solid $red;
@@ -46,6 +46,14 @@
   border-radius: 5px;
   line-height: 1.2;
   background: lighten($red, 30%);
+}
+
+.no-comments-message {
+  font-size: .9em;
+  text-align: center;
+  display: none;
+  color: #666;
+  margin: 2rem 0;
 }
 
 .lds-ring {
