@@ -1,8 +1,12 @@
 <section id="comment-section">
+  <div id="reply-preview">
+    <p><strong>Replying to:</strong></p>
+  </div>
   <form id="new-comment-form">
     <input type="text" name="name" id="comment-name" placeholder="Your name">
     <textarea name="content" id="comment-content" placeholder="Your comment"></textarea>
     <input type="text" readonly hidden name="slug" value="{{ .File.BaseFileName }}">
+    <input type="text" readonly hidden name="parent" value="">
     <input type="text" name="password" style="display:none !important" tabindex="-1" autocomplete="off">
     <p class="form-text">Markdown supported.</p>
     <button type="submit" id="comment-submit">Add comment</button>
@@ -42,7 +46,7 @@
     const commentsContainer = $('#comments-container')
     const date = formatDate(new Date(data.date))
     commentsContainer.prepend(`
-      <div class='comment'>
+      <div class='comment' data-comment-id='${data.id}'>
         <aside>
           <div class='comment-avatar-container'>
            ${data.avatar}
@@ -56,13 +60,65 @@
           <article class='comment-content'>
             ${data.content}
           </article>
+          <div class='comment-actions'>
+            <a class='comment-reply' href="#"><i class='fas fa-reply'></i> Reply</a>
+          </div>
+          <div class='comment-replies'></div>
         </section>
       </div>
     `)
+    if (data.replies) {
+      console.log("replies!")
+      let replyContainer = $('#comments-container .comment[data-comment-id="' + data.id + '"]').find('.comment-replies')
+      data.replies.forEach(function (reply) {
+        const date = formatDate(new Date(reply.date))
+        replyContainer.append(`
+        <div class='reply' data-reply-id='${reply.id}'>
+          <aside>
+            <div class='reply-avatar-container'>
+              ${reply.avatar}
+            </div>
+          </aside>
+          <section class='reply-container'>
+            <header>
+              <div class='reply-author'>${reply.name}</div>
+              <div class='reply-date'>${date}</div>
+            </header>
+            <article class='reply-content'>
+              ${reply.content}
+            </article>
+          </section>
+        </div>`)
+      })
+    }
+  }
+
+  function parseReply(data) {
+    let replyContainer = $('#comments-container .comment[data-comment-id="' + data.parentComment + '"]').find('.comment-replies')
+    const date = formatDate(new Date(data.date))
+    replyContainer.append(`
+    <div class='reply' data-reply-id='${data.id}'>
+      <aside>
+        <div class='reply-avatar-container'>
+          ${data.avatar}
+        </div>
+      </aside>
+      <section class='reply-container'>
+        <header>
+          <div class='reply-author'>${data.name}</div>
+          <div class='reply-date'>${date}</div>
+        </header>
+        <article class='reply-content'>
+          ${data.content}
+        </article>
+      </section>
+    </div>`)
   }
 
   $(document).ready(function () {
-    $.get('https://comments.wondering.monster/fetch/{{ .File.BaseFileName }}', function (response) {
+    $('input[name="parent"]').val("")
+    let slug = $('#new-comment-form input[name="slug"]').val();
+    $.get("https://comments.wondering.monster/fetch/" + slug, function (response) {
       console.log(response)
       if (response.status === "ok") {
         $(".lds-ring").css("display", "none")
@@ -82,12 +138,21 @@
     $('#comment-submit').click(function (e) {
       e.preventDefault();
       var data = $('#new-comment-form').serialize();
-      $.post('https://comments.wondering.monster/create', data, function (response) {
+      $.post("https://comments.wondering.monster/create", data, function (response) {
         if (response.status === "ok") {
-          parseComment(response)
+          if (response.parentComment && response.parentComment.length) {
+            parseReply(response)
+            $('html, body').animate({
+              scrollTop: ($('.reply[data-reply-id="' + response.id + '"]').offset().top)
+            }, 300);
+          } else {
+            parseComment(response)
+          }
           $('.comment-error').css('display', 'none')
           $('.no-comments-message').css("display", "none")
-          $('#comment-name, #comment-content').val("")
+          $('#reply-preview').css("display", "none")
+          $('#reply-preview .comment').remove();
+          $('#comment-name, #comment-content, input[name="parent"]').val("")
         } else {
           console.error(response)
           $('.comment-error').css('display', 'block')
@@ -97,6 +162,21 @@
           console.error(response)
           $('.comment-error').css('display', 'block')
         })
+    })
+    $('body').on('click', '.comment-reply', function (e) {
+      e.preventDefault()
+      let replyPreview = $("#reply-preview")
+      $('#reply-preview .comment').remove();
+      let parentComment = $(this).closest('.comment').clone()
+      let parentId = parentComment.data('comment-id')
+      parentComment.find('.comment-actions').remove()
+      console.log(parentComment)
+      parentComment.appendTo(replyPreview)
+      replyPreview.css("display", "block")
+      $('#new-comment-form input[name="parent"]').val(parentId)
+      $('html, body').animate({
+        scrollTop: ($('#reply-preview').offset().top)
+      }, 300);
     })
   })
 </script>

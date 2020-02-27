@@ -19,8 +19,8 @@ input,
 textarea {
   display: block;
   width: 100%;
-  padding: 0 1rem;
-  border: 1px solid $black;
+  padding: .25rem 1rem;
+  border: 1px solid #aaa;
   background: $grey1;
   border-radius: 5px;
   font-size: 0.95em;
@@ -28,6 +28,7 @@ textarea {
   margin-bottom: 1rem;
   &:focus {
     background: lighten($red,45%);
+    border-color: $black;
   }
 }
 

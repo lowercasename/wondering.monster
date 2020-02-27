@@ -12,8 +12,50 @@
   .comment-author {
     font-weight: $bold-font-weight;
     margin-right: .75rem;
+    max-width: 300px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .comment-date {
+    color: #666;
+  }
+  header {
+    display: flex;
+    padding: 0;
+    font-size: 1em;
+  }
+  .comment-actions {
+    position: relative;
+    top: -1.15rem;
+  }
+}
+
+.reply {
+  max-width: 540px;
+  margin-left: 60px;
+  font-size: 1em;
+  display: flex;
+  margin: 1rem 0;
+  .reply-avatar-container {
+    width: 40px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .reply-container {
+    padding: 0 1rem;
+  }
+  .reply-author {
+    font-weight: $bold-font-weight;
+    margin-right: .75rem;
+    max-width: 300px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .reply-date {
     color: #666;
   }
   header {
@@ -54,6 +96,28 @@
   display: none;
   color: #666;
   margin: 2rem 0;
+}
+
+a.comment-reply {
+  color: #a7a7a7;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  &:hover {
+    background: none;
+    color: $red;
+  }
+  &::after {
+    content: '';
+  }
+}
+
+#reply-preview {
+  display: none;
+  border: 1px solid $grey2;
+  border-radius: 5px;
+  margin: 2rem 0;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .lds-ring {
