@@ -942,10 +942,20 @@ a.comment-reply {
   a.comment-reply::after {
     content: ''; }
 
+button.cancel-reply {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  position: absolute;
+  right: 0;
+  top: 16px; }
+
 #reply-preview {
+  position: relative;
   display: none;
   border: 1px solid #ddd;
-  background: #fefefe;
+  background: #fafafa;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin: 2rem 0;
   padding: 1rem 1rem 0 1rem; }

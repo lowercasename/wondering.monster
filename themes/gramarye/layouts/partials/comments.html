@@ -1,5 +1,6 @@
 <section id="comment-section">
   <div id="reply-preview">
+    <button type="button" class="cancel-reply"><i class="fas fa-times"></i></button>
     <p><strong>Replying to:</strong></p>
   </div>
   <form id="new-comment-form">
@@ -117,7 +118,6 @@
     $('input[name="parent"]').val("")
     let slug = $('#new-comment-form input[name="slug"]').val();
     $.get("https://comments.wondering.monster/fetch/" + slug, function (response) {
-      console.log(response)
       if (response.status === "ok") {
         $(".spinner").css("display", "none")
         let comments = response.comments;
@@ -163,17 +163,23 @@
     $('body').on('click', '.comment-reply', function (e) {
       e.preventDefault()
       let replyPreview = $("#reply-preview")
-      $('#reply-preview .comment').remove();
+      $('#reply-preview .comment').remove()
       let parentComment = $(this).closest('.comment').clone()
       let parentId = parentComment.data('comment-id')
       parentComment.find('.comment-actions').remove()
-      console.log(parentComment)
       parentComment.appendTo(replyPreview)
       replyPreview.css("display", "block")
       $('#new-comment-form input[name="parent"]').val(parentId)
       $('html, body').animate({
         scrollTop: ($('#reply-preview').offset().top)
       }, 300);
+    })
+    $('body').on('click', '.cancel-reply', function (e) {
+      e.preventDefault()
+      let replyPreview = $("#reply-preview")
+      $('#reply-preview .comment').remove()
+      $('#new-comment-form input[name="parent"]').val("")
+      replyPreview.css("display", "none")
     })
   })
 </script>
