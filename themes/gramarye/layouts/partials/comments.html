@@ -8,18 +8,16 @@
     <input type="text" readonly hidden name="slug" value="{{ .File.BaseFileName }}">
     <input type="text" readonly hidden name="parent" value="">
     <input type="text" name="password" style="display:none !important" tabindex="-1" autocomplete="off">
-    <p class="form-text">Markdown supported.</p>
+    <p class="form-text">Markdown supported.
+    </p>
     <button type="submit" id="comment-submit">Add comment</button>
     <div class="comment-error error-message">There was a problem adding your comment. Make sure you've filled in all the
       fields
       and try again in a minute.</div>
   </form>
   <div id="comments-container">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="spinner">
+      <i class="fas fa-spinner fa-spin"></i>
     </div>
   </div>
   <div class="no-comments-message">No comments yet. Be the first to add one!</div>
@@ -121,18 +119,17 @@
     $.get("https://comments.wondering.monster/fetch/" + slug, function (response) {
       console.log(response)
       if (response.status === "ok") {
-        $(".lds-ring").css("display", "none")
+        $(".spinner").css("display", "none")
         let comments = response.comments;
         comments.forEach(function (comment) {
           parseComment(comment)
         })
       } else if (response.status === "not-found") {
-        $(".lds-ring").css("display", "none")
+        $(".spinner").css("display", "none")
         $('.no-comments-message').css("display", "block")
       }
     }).fail(function (response) {
-      console.error(response)
-      $(".lds-ring").css("display", "none")
+      $(".spinner").css("display", "none")
       $(".fetch-error").css("display", "block")
     })
     $('#comment-submit').click(function (e) {
