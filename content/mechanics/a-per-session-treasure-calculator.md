@@ -74,7 +74,8 @@ As mentioned, the randomly generated treasure items below are adapted from Court
           let result = gemTypes.find(e => {
             return e.max >= partValue && e.min <= partValue
           })
-          string += 'a ' + randomFromArray(jewelAdjectives) + ' ' + randomFromArray(result.names) + ', worth ' + partValue + ' in coin'
+          let adjective = randomFromArray(jewelAdjectives)
+          string += indefiniteArticle(adjective) + ' ' + adjective + ' ' + randomFromArray(result.names) + ', worth ' + partValue + ' in coin'
           remainingValue = remainingValue - partValue
           if (remainingValue > 0) {
             string += '; '
