@@ -336,6 +336,13 @@ body {
 img {
   max-width: 100%; }
 
+.calculator-box {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem; }
+
 @font-face {
   font-family: 'Futura PT';
   src: url("../fonts/FuturaPTMedium.woff2") format("woff2"), url("../fonts/FuturaPTMedium.woff") format("woff");
@@ -600,6 +607,26 @@ label {
   position: relative;
   color: #666;
   top: -1rem; }
+
+.inline-input {
+  display: inline;
+  max-width: 8rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0;
+  text-align: center; }
+  .inline-input:focus {
+    background: #fdf2f2; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
 
 header {
   padding: 4rem 0 6rem 0; }
