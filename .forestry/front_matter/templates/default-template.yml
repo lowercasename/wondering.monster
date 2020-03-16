@@ -18,5 +18,6 @@ fields:
   name: summary
   label: summary
 pages:
+- content/mechanics/alternative-magic-system.md
 - content/mechanics/lessons-a-levelling-mechanic-for-class-less-games.md
 - content/monsters/the-ilk.md
