@@ -639,7 +639,19 @@ header {
     header h1 a:hover {
       background: none;
       color: #e62e2e; }
-
+  header .mobile-image {
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #333;
+    width: 100px;
+    object-position: top;
+    padding-top: 8px;
+    display: block;
+    margin: 0 auto 2rem auto; }
+    @media (min-width: 768px) {
+      header .mobile-image {
+        display: none; } }
 footer {
   height: 8rem;
   padding: 2rem;
@@ -661,7 +673,11 @@ footer {
     display: flex;
     justify-content: center; }
   .sidebar__header .sidebar-image {
-    height: 300px; }
+    height: 300px;
+    display: none; }
+    @media (min-width: 576px) {
+      .sidebar__header .sidebar-image {
+        display: block; } }
   @media (min-width: 576px) {
     .sidebar__header {
       flex-direction: row; } }

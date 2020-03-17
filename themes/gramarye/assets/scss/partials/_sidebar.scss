@@ -8,6 +8,10 @@
   }
   .sidebar-image {
     height: 300px;
+    display: none;
+    @media (min-width: $mobile-breakpoint) {
+      display: block;
+    }
   }
   @media (min-width: $mobile-breakpoint) {
     flex-direction: row;

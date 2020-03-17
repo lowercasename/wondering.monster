@@ -5,7 +5,7 @@ theme = "gramarye"
 paginate = 10
 [params]
   author = "Raphael Kabo"
-  description = "A blog of indie RPG, D&D and OSR homebrew, adventures, and other curiosities compiled (primarily for personal pleasure) by Raphael Kabo."
+  description = "Indie RPG, D&D and OSR homebrew, adventures, and other curiosities compiled (primarily for personal pleasure) by Raphael Kabo."
 
 
 [markup]

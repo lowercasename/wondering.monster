@@ -7,4 +7,18 @@ header {
       color: $red;
     }
   }
+  .mobile-image {
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid $black;
+    width: 100px;
+    object-position: top;
+    padding-top: 8px;
+    display: block;
+    margin: 0 auto 2rem auto;
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
 }
