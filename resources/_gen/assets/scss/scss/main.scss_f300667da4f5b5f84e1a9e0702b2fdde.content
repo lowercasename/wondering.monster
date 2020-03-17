@@ -720,9 +720,6 @@ footer {
 .content {
   margin-bottom: 2rem; }
 
-.summary-content {
-  font-style: italic; }
-
 .post-meta {
   background: #fefefe;
   color: #484848;
