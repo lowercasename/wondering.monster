@@ -551,7 +551,9 @@ dd {
   border-radius: .5rem;
   padding: 0 .5rem; }
 
-button {
+button,
+input[type='submit'],
+input[type='button'] {
   padding: 0 1rem;
   border: 1px solid #333;
   background: #fefefe;
@@ -560,7 +562,9 @@ button {
   transition: .15s ease-out;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   margin-right: .5rem; }
-  button:hover {
+  button:hover,
+  input[type='submit']:hover,
+  input[type='button']:hover {
     color: #e62e2e;
     border-color: #e62e2e;
     background: white;
