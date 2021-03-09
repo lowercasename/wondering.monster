@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: .95em;
+  thead {
+    border-bottom: 1px solid black;
+  }
+  td {
+    min-width: 35px;
+    vertical-align: top;
+  }
+}

@@ -17,7 +17,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
 
-  {{ $style := resources.Get "scss/main.scss" | toCSS }}
+  {{ $style := resources.Get "scss/main.scss" | toCSS | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   <link rel="stylesheet" href="{{ "css/fontawesome.min.css" | relURL }}">

@@ -515,7 +515,7 @@ a {
     background: rgba(230, 46, 46, 0.1);
     color: #333;
     text-decoration: none; }
-  a .footnote-ref::after {
+  a.footnote-ref::after, a.footnote-backref::after {
     display: none; }
 
 a.no-after::after,
@@ -1011,3 +1011,13 @@ button.cancel-reply {
   font-size: 8rem;
   color: #aaa;
   text-align: center; }
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: .95em; }
+  table thead {
+    border-bottom: 1px solid black; }
+  table td {
+    min-width: 35px;
+    vertical-align: top; }
