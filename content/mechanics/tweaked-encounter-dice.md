@@ -14,6 +14,8 @@ Every OSR rule is a homebrew of someone else's homebrew, so here's the encounter
 
 When the party moves into a new area of the dungeon or spends some tens of minutes on "exploration at architectural scale ... assuming careful advance into hostile places",[^1] one of the players must roll the Encounter Die. The DM should interpret the result as follows:
 
+<div class="roll-table">
+
 | d6 | Outcome                                             |
 | -- | --------------------------------------------------- |
 | 1  | Encounter or catastrophe       |
@@ -23,11 +25,15 @@ When the party moves into a new area of the dungeon or spends some tens of minut
 | 5  | Clues, signs, warnings, or omens        |
 | 6  | The dungeon provides...        |
 
+</div>
+
 **Dungeon exploration actions** are those which take a significant amount of time or resource investment when either are scarce and the shadows are moving in. These include picking locks, dismantling traps, breaking down stuck doors, climbing, loading the treasure into sacks, and searching an area meticulously for hidden treasure and secret passages. **Free actions**, which don't incur an encouter die roll, include swinging open doors, looking around corners, pocketing a ring you spotted on the ground, and calling out to a friend.
 
 **Encounter or catastrophe**: An encounter with a wandering monster, or a terrible unravelling in the fabric of the dungeon - a landslide, tunnel collapse, flood, or fire. Prepare a small table of encounters and catastrophes keyed to each dungeon, and roll on it when this outcome shows up. This roll is the apex of the Encounter Die, but the system's real heart - what makes this outcome _feel dangerous_ -  lies in the other outcomes.
 
 **The dungeon takes away...**: Torches sputter and die. Lamps flicker out. Spells which your wizard assured you would last all day fizzle up, leaving an acrid, oily smell. The morale of hired retainers wavers; the pressures of pushing on through the cold and dark begin to sink their teeth in. On a 3, the dungeon takes away one thing; on a 2, the dungeon takes away two different things, or permanently destroys one. You can use this table for guidance:
+
+<div class="roll-table">
 
 | d6 | Outcome                                             |
 | -- | --------------------------------------------------- |
@@ -37,6 +43,8 @@ When the party moves into a new area of the dungeon or spends some tens of minut
 | 4  | Lamp goes out        |
 | 5  | Torch goes out        |
 | 6  | Torch goes out       |
+
+</div>
 
 The purpose of this outcome is to impress upon the players that they are in a different, alien place now. This is a world which will kill them simply through inaction, stupidity, or bad luck. Their job is to manage limited resources to transform it into something safe and sane before their time runs out.
 
