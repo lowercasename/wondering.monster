@@ -2,7 +2,7 @@
 public
 
 # Hugo resource cache folder
-resources
+/resources
 
 # Logs
 logs
