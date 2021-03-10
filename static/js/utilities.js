@@ -31,7 +31,7 @@ $(document).on('click', '.roll-table__button', function() {
   setTimeout(function(){
     let outcomes = JSON.parse(self.closest('.roll-table').attr('data-outcomes'));
     let { value, index } = randomFromArrayWithIndex(outcomes);
-    outputContainer.html(`<span class="roll-table__output__arrow">↳</span> ${index + 1}: ${value}`);
+    outputContainer.html(`<span class="roll-table__output__arrow">↳</span> <strong>${index + 1}</strong> ${value}`);
   }, 500);
   
 })
