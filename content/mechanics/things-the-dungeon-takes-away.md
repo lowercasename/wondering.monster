@@ -2,7 +2,7 @@
 title: "d12 Things the Dungeon Takes Away"
 date: 2021-03-09T18:46:22Z
 draft: false
-categories: ["Mechanics"]
+categories: ["Resources"]
 tags: []
 summary: ""
 ---
