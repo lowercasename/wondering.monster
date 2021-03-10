@@ -1,6 +1,9 @@
 # Hugo public folder
 public
 
+# Hugo resource cache folder
+resources
+
 # Logs
 logs
 *.log
