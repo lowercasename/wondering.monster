@@ -1025,8 +1025,12 @@ table {
 .roll-table table {
   margin-bottom: .5rem; }
 
+.roll-table thead th:first-child,
 .roll-table tbody td:first-child {
-  width: 50px; }
+  width: 50px;
+  font-weight: bold;
+  padding-right: 15px;
+  text-align: right; }
 
 .roll-table__footer {
   margin-bottom: 1rem; }
