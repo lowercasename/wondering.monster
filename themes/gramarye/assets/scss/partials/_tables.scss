@@ -15,8 +15,12 @@ table {
   table {
     margin-bottom: .5rem;
   }
+  thead td:first-child,
   tbody td:first-child {
     width: 50px;
+    font-weight: bold;
+    padding-right: 15px;
+    text-align: right;
   }
   &__footer {
     margin-bottom: 1rem;
