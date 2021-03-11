@@ -142,17 +142,25 @@
     return !isNaN(num)
   }
   $(".roll-hp").click(function () {
+    let dieCount, dieType;
     let hdValue = $('.monster__stat-block__hd').next('dd').find('.value').text().split(/([+-])/);
     console.log(hdValue);
-    let dieCount = hdValue[0];
+    if (hdValue[0] === '½') {
+      dieCount = 1;
+    } else {
+      dieCount = hdValue[0];
+    }
     let operator = hdValue[1] || "";
     let modifier = hdValue[2] || "";
     let result = $('.monster__stat-block__hd').next('dd').find('.result');
     let dieIcon = $('.monster__stat-block__hd').next('dd').find('button').find('i');
     let system = $('.convert-stat-block').val();
-    let dieType;
     if (system === "knave" || system === "bx-dnd" || system === "adnd") {
-      dieType = 'd8';
+      if (hdValue[0] === '½') {
+      dieType = 'd4';
+      } else {
+        dieType = 'd8';
+      }
     } else if (system === "5e") {
       let size = $('.monster__stat-block__size').next('dd').text().toLowerCase();
       dieType = HDBySize[size];
@@ -170,6 +178,7 @@
     let hpResult = $('.monster__stat-block__hd').next('dd').find('.result');
     let speedValues = $('.monster__stat-block__speed').next('dd').data('speed');
     let speedResult = $('.monster__stat-block__speed').next('dd');
+    hdValue = hdValue === '½' ? 1 : hdValue;
     if (system === "knave") {
       acLabel.text("Armor Defence");
       acResult.text(acValue);
