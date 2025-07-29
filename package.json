@@ -1,7 +1,7 @@
 {
   "dependencies": {
+    "@dice-roller/rpg-dice-roller": "^5.5.1",
     "indefinite": "^2.3.1",
-    "micromodal": "^0.4.2",
-    "rpg-dice-roller": "^4.0.2"
+    "micromodal": "^0.4.2"
   }
 }

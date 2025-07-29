@@ -2,7 +2,10 @@ baseURL = "http://wondering.monster/"
 languageCode = "en-gb"
 title = "Wondering Monster"
 theme = "gramarye"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
+
 [params]
   author = "Raphael Kabo"
   description = "Indie RPG, D&D and OSR homebrew, adventures, and other curiosities compiled (primarily for personal pleasure) by Raphael Kabo."
